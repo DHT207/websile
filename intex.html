@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="=-width, initial-scale=1.0">
+    <title>Website bài tập HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f6fb;
+            color: #243247;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2457a7;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #173d79;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: while;
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #2457a7;
+        }
+
+        img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dbeafe;
+        }
+
+        input, select, textarea {
+            padding: 9px;
+            margin: 7px 0;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #2457a7;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #173d79;
+        }
+
+        footer {
+            background-color: #173d79;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<section id="bai1">
+
+    <h2>Bài 1: Thông tin cá nhân</h2>
+
+    <p><b>Họ tên:</b> Dương Hoàng Tâm</p>
+    <p><b>Ngày sinh:</b> 12/08/2007</p>
+    <p><b>Lớp:</b> ICT4-K19</p>
+
+    <h3>Ảnh đại diện</h3>
+
+    <img src="https://cdn.phototourl.com/member/2026-10-01-52cfb3ba-e99a-4291-8f61-44f1f1bcee5b.jpg"
+         alt="Ảnh đại diện cá nhân">
+
+    <h3>Sở thích</h3>
+
+    <ul>
+        <li>Đá Bóng</li>
+        <li>Chơi Game</li>
+        <li>Du lịch</li>
+        <li>Ngủ</li>
+    </ul>
+
+    <p>
+        <a href="https://www.facebook.com/tam.duonghoang.908"
+           target="_blank">Facebook cá nhân</a>
+    </p>
+
+   
+  
+
+</section>
+
+<!-- BÀI 2 -->
+<section id="bai2">
+
+    <h2>Bài 2: Bảng điểm sinh viên</h2>
+
+    <table>
+
+        <tr>
+            <th>STT</th>
+            <th>Môn học</th>
+            <th>Điểm</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Xác Xuất Thông Kê</td>
+            <td>9.2</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Toán Rời Rạc</td>
+            <td>8.0</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Vật Lí 1</td>
+            <td>9.0</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Giải tích</td>
+            <td>9.0</td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Tiếng Anh 3</td>
+            <td>8.0</td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Điểm trung bình</th>
+            <th>8.64</th>
+        </tr>
+
+    </table>
+
+</section>
+
+<!-- BÀI 3 -->
+<section id="bai3">
+
+    <h2>Bài 3: Form đăng ký sinh viên</h2>
+
+    <form>
+
+        <label>Họ tên:</label><br>
+        <input type="text" name="hoten"
+               placeholder="Nhập họ tên" required>
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"
+               placeholder="Nhập email" required>
+        <br><br>
+
+        <label>Mật khẩu:</label><br>
+        <input type="password" name="matkhau"
+               placeholder="Nhập mật khẩu" required>
+        <br><br>
+
+        <label>Giới tính:</label><br>
+
+        <input type="radio" name="gioitinh" value="Nam">
+        Nam
+
+        <input type="radio" name="gioitinh" value="Nu">
+        Nữ
+
+        <input type="radio" name="gioitinh" value="Khac">
+        Khác
+
+        <br><br>
+
+        <label>Sở thích:</label><br>
+
+        <input type="checkbox" name="sothich" value="Am nhac">
+        Âm nhạc
+
+        <input type="checkbox" name="sothich" value="The thao">
+        Thể thao
+
+        <input type="checkbox" name="sothich" value="Du lich">
+        Du lịch
+
+        <input type="checkbox" name="sothich" value="Lap trinh">
+        Lập trình
+
+        <br><br>
+
+        <label>Ngành học:</label><br>
+
+        <select name="nganh">
+            <option value="">-- Chọn ngành học --</option>
+            <option value="CNTT">CNTT</option>
+            <option value="Kinh te">Kinh tế</option>
+            <option value="Dien tu">Điện tử</option>
+        </select>
+
+        <br><br>
+
+        <label>Ghi chú:</label><br>
+
+        <textarea name="ghichu" rows="5" cols="40"
+                  placeholder="Nhập ghi chú"></textarea>
+
+        <br><br>
+
+        <button type="submit">Gửi đăng ký</button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 - Website bài tập HTML5</p>
+</footer>
+
+</body>
+</html>
